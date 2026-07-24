@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta property="og:title" content="Solusi Sehat Keluarga: Kopi Premium & Greenzhi">
-    <meta property="og:description" content="Nikmati Kopi tanpa takut asam lambung dan rawat gigi dengan keajaiban Ganoderma Paten Dunia.">
+    <!-- PENGATURAN TAMPILAN DI GRUP FB -->
+    <meta property="og:title" content="Kopi Sehat & Odol Alami | Solusi Keluarga">
+    <meta property="og:description" content="Nikmati Kopi 100% Arabika Brazil anti asam lambung dan Pasta Gigi Siwak paling alami.">
     <meta property="og:type" content="website">
 
     <title>Produk Kesehatan Premium Shuang Hor</title>
@@ -16,92 +17,89 @@
         /* BAR PRESENTER */
         .presenter-bar { background-color: #d32f2f; color: #ffffff; text-align: center; padding: 10px; font-weight: bold; font-size: 14px; letter-spacing: 0.5px; }
         
-        /* 1. HEADER */
+        /* 1. HEADER (HOOK & HERO IMAGE UTAMA) */
         .header { text-align: center; padding: 20px; border-bottom: 2px solid #eee; }
-        .header h1 { color: #d32f2f; font-size: 24px; margin-bottom: 10px; line-height: 1.3; }
+        .header h1 { color: #2e7d32; font-size: 24px; margin-bottom: 10px; line-height: 1.3; }
+        .hero-img { width: 100%; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.15); margin: 20px 0; }
         
-        /* 2. BODY */
+        /* 2. BODY (PRODUK KOPI & ODOL) */
         .body-section { padding: 20px; }
-        .poin-kopi { background: #fff3cd; padding: 15px; border-radius: 8px; border-left: 5px solid #ffc107; margin: 15px 0; }
-        .poin-gigi { background: #e8f5e9; padding: 15px; border-radius: 8px; border-left: 5px solid #4caf50; margin: 15px 0; }
+        .produk-box { background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 20px; margin-bottom: 25px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        .produk-img { width: 100%; border-radius: 8px; margin-bottom: 15px; }
+        .produk-box h3 { color: #5c3a21; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .produk-box h3.green { color: #2e7d32; }
         
-        /* 3. TESTIMONI */
-        .testimoni { background: #fdfaf6; padding: 15px; border-radius: 8px; margin: 20px 0; border-left: 5px solid #5c3a21; font-style: italic; }
+        ul.keunggulan { padding-left: 20px; font-size: 15px; margin-bottom: 0; }
+        ul.keunggulan li { margin-bottom: 10px; }
         
         /* BOX URGENCY */
         .urgency-box { background-color: #ffebee; border: 2px dashed #f44336; padding: 15px; border-radius: 8px; margin: 20px 0; text-align: center; }
         .urgency-box h4 { color: #d32f2f; margin: 0 0 5px 0; font-size: 18px; animation: blink 1.5s infinite; }
         @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
 
-        /* 4. CTA */
+        /* CTA (TOMBOL EKSEKUSI) */
         .cta-section { text-align: center; padding: 20px 20px 30px; }
         .btn-wa { display: inline-block; background: #25D366; color: white; padding: 15px 25px; text-decoration: none; font-weight: bold; border-radius: 50px; font-size: 18px; box-shadow: 0 4px 6px rgba(0,0,0,0.2); transition: 0.3s; }
         .btn-wa:hover { background: #1ebe57; transform: translateY(-2px); }
         .btn-wa.pulse { animation: pulse 2s infinite; }
         @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
         
-        /* 5. FAQ */
-        .faq { margin: 20px; padding: 0 20px; }
-        .faq-item { margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        
-        /* 6. FOOTER */
-        .footer { text-align: center; padding: 30px 20px; font-size: 12px; color: #ffffff; background-color: #6c757d; margin-top: 30px; }
+        /* FOOTER */
+        .footer { text-align: center; padding: 30px 20px; font-size: 12px; color: #ffffff; background-color: #6c757d; margin-top: 20px; }
 
-        /* 7. WA FLOATING */
+        /* WA FLOATING */
         .float-wa { position: fixed; width: 60px; height: 60px; bottom: 20px; right: 20px; background-color: #25d366; color: #FFF; border-radius: 50px; text-align: center; box-shadow: 2px 2px 5px rgba(0,0,0,0.3); z-index: 1000; display: flex; align-items: center; justify-content: center; animation: bounce 2s infinite; }
         @keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: translateY(0); } 40% { transform: translateY(-10px); } 60% { transform: translateY(-5px); } }
     </style>
 </head>
 <body>
 
-    <!-- BLOK MERAH PRESENTER -->
+    <!-- BLOK MERAH PRESENTER (OTOMATIS BERUBAH) -->
     <div class="presenter-bar">
         📢 Direkomendasikan Oleh: <span id="nama-presenter">Inda</span>
     </div>
 
     <div class="container">
-        <!-- 1. HEADER -->
+        <!-- HEADER UTAMA -->
         <div class="header">
-            <h1>Rahasia Keluarga Sehat: Kopi Nikmat & Mulut Bersih Sepanjang Hari!</h1>
-            <p><strong>Tinggalkan produk kimia. Beralihlah ke keajaiban Ganoderma ber-Paten Dunia yang terbukti aman untuk lambung dan perlindungan keluarga Anda.</strong></p>
+            <h1>Keluarga Cerdas Memilih yang Alami & Menyehatkan!</h1>
+            <p><strong>Beralihlah ke keajaiban Ganoderma ber-Paten Dunia. Perlindungan total dari secangkir kopi pagi hingga rutinitas sikat gigi keluarga Anda.</strong></p>
             
-            <div style="text-align: center; margin: 20px 0;">
-                <img src="banner-kopi.jpg" alt="Varian Kopi Juwara Cafe" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.15); border: 1px solid #ddd;">
-            </div>
+            <!-- GAMBAR 1: HERO HEADER -->
+            <img src="retouch_2026072420504677.jpg" alt="Solusi Kesehatan Keluarga" class="hero-img">
         </div>
 
-        <!-- 2. BODY (EDUKASI PRODUK) -->
+        <!-- EDUKASI PRODUK -->
         <div class="body-section">
-            <p>Halo, saya <strong>Inda</strong>. Menjaga kesehatan keluarga berawal dari pilihan rutinitas kecil setiap hari, mulai dari secangkir kopi pagi hingga rutinitas sikat gigi.</p>
-            <p>Kini Anda tidak perlu khawatir lagi. Kami menghadirkan dua mahakarya produk premium dari <strong>Shuang Hor</strong> yang diformulasikan khusus dengan ekstrak <em>Ganoderma</em> langka!</p>
+            <p>Halo, saya <strong>Inda</strong>. Kesehatan keluarga berawal dari apa yang kita konsumsi setiap hari. Kini Anda tidak perlu khawatir lagi, kami menghadirkan dua mahakarya premium dari <strong>Shuang Hor</strong>:</p>
             
-            <div class="poin-kopi">
-                <h4 style="margin-top:0; color:#5c3a21;">☕ KOPI JUWARA CAFE</h4>
-                <p>Bukan sekadar kopi enak, tapi memberikan nilai tambah bagi kesehatan:</p>
-                <ul style="padding-left: 20px; font-size: 14px;">
-                    <li><strong>Nyaman di Lambung:</strong> Kafein sangat rendah, ramah bagi penderita maag atau asam lambung.</li>
-                    <li><strong>Perlindungan Liver:</strong> Membantu menurunkan enzim hati (GOT & GPT).</li>
-                    <li><strong>Anti-Inflamasi:</strong> Meredakan peradangan sendi & asam urat.</li>
-                    <li><strong>Tidur Lebih Nyenyak:</strong> Konsentrasi tinggi di siang hari, istirahat pulas di malam hari.</li>
+            <!-- PRODUK 1: KOPI JUWARA -->
+            <div class="produk-box">
+                <h3>☕ KOPI SH JUWARA CAFE</h3>
+                <!-- GAMBAR 2: PRODUK KOPI -->
+                <img src="retouch_2026072420515632.jpg" alt="Kopi Juwara Cafe" class="produk-img">
+                <p>Banyak kopi beredar di pasaran, tapi apa bedanya Kopi Juwara? Inilah rahasia di setiap sachetnya:</p>
+                <ul class="keunggulan">
+                    <li><strong>Biji Kopi Premium Brazil:</strong> Menggunakan 100% Arabika Brazil. Dipanggang <em>fresh</em> dengan standar ISO Internasional tanpa perasa buatan.</li>
+                    <li><strong>Mengandung Ganoderma (Lingzhi):</strong> Memberikan dampak kebugaran optimal dan melindungi organ tubuh.</li>
+                    <li><strong>Creamer Minyak Kelapa (Netherland):</strong> Pelembut beraroma dari minyak nabati non-hidrogenasi. <strong>Bebas Lemak Trans Berbahaya!</strong></li>
+                    <li><strong>Gula Tebu Asli:</strong> Rasa manis natural dengan kalori yang terjaga. (Tersedia juga varian tanpa gula).</li>
                 </ul>
             </div>
 
-            <div class="poin-gigi">
-                <h4 style="margin-top:0; color:#2e7d32;">🌿 PASTA GIGI GREENZHI</h4>
-                <p>Lebih dari sekadar pasta gigi biasa. Solusi perawatan oral total yang canggih dan alami:</p>
-                <ul style="padding-left: 20px; font-size: 14px;">
-                    <li><strong>Paten Dunia:</strong> Diformulasikan dengan ekstrak Ganoderma untuk kesehatan gusi.</li>
-                    <li><strong>Napas Segar:</strong> Membersihkan tuntas dan menjaga napas segar sepanjang hari.</li>
-                    <li><strong>Multifungsi:</strong> Solusi alami untuk berbagai masalah mulut spesifik.</li>
-                    <li><strong>100% Halal:</strong> Berbasis bahan alami, terbukti berkualitas dan bersertifikat.</li>
+            <!-- PRODUK 2: GREENZHI -->
+            <div class="produk-box">
+                <h3 class="green">🌿 PASTA GIGI GREENZHI</h3>
+                <!-- GAMBAR 3: PRODUK ODOL -->
+                <img src="retouch_2026072420530876.jpg" alt="Pasta Gigi Greenzhi" class="produk-img">
+                <p>Diklaim sebagai <strong>Odol Paling Alami di Dunia!</strong> Berikan perlindungan terbaik untuk senyum keluarga Anda:</p>
+                <ul class="keunggulan">
+                    <li><strong>100% Tumbuhan Alami:</strong> Tanpa bahan kimia berbahaya, sehingga aman untuk keseimbangan hormon tubuh.</li>
+                    <li><strong>Kandungan Ekstrak Siwak:</strong> Mengikuti Sunnah untuk kebersihan mulut yang maksimal dan napas segar.</li>
+                    <li><strong>Paten Dunia & Teruji:</strong> Mencegah plak, kerusakan gigi, penyakit gusi, dan melancarkan sirkulasi darah jaringan gusi.</li>
+                    <li><strong>Bersertifikat Resmi:</strong> Sudah berstempel BPOM dan Halal. Pastikan Greenzhi ada di kamar mandi Anda!</li>
                 </ul>
             </div>
-        </div>
-
-        <!-- 3. TESTIMONI PRODUK -->
-        <div class="testimoni">
-            <p>"Dulu saya sering cemas kalau minum kopi karena asam lambung sering kumat. Sejak kenal Kopi Juwara, saya bisa ngopi tiap hari tanpa rasa perih! Ditambah pasta gigi Greenzhi, keluarga jadi bebas sariawan dan bau mulut."</p>
-            <p style="text-align: right; margin:0; font-weight: bold;">- Konsumen Setia Shuang Hor</p>
         </div>
 
         <!-- INFO KENAIKAN HARGA (URGENCY) -->
@@ -112,38 +110,25 @@
             </div>
         </div>
 
-        <!-- 4. CTA -->
+        <!-- CTA -->
         <div class="cta-section">
             <h3 style="margin-top:0; color:#d32f2f;">Pesan Sekarang Untuk Keluarga Tercinta!</h3>
             <p>Jangan tunggu sampai keluhan datang. Klik tombol di bawah ini untuk pemesanan atau konsultasi produk!</p>
             
-            <a href="https://wa.me/628977526133?text=Halo%20Inda,%20saya%20mau%20Pesan%20Produk%20Kopi/Greenzhi%20sebelum%20harga%20naik" class="btn-wa pulse">
+            <a href="https://wa.me/628977526133?text=Halo,%20saya%20mau%20Pesan%20Kopi/Greenzhi%20sebelum%20harga%20naik" class="btn-wa pulse">
                 👉 PESAN PRODUK SEKARANG
             </a>
         </div>
 
-        <!-- 5. FAQ (TANYA JAWAB PRODUK) -->
-        <div class="faq">
-            <h3 style="text-align:center;">Tanya Jawab (FAQ)</h3>
-            <div class="faq-item">
-                <h4 style="margin: 0 0 5px 0; color: #5c3a21;">Apakah aman untuk penderita asam lambung kronis?</h4>
-                <p style="margin: 0; font-size: 14px; color: #555;">Kopi Juwara memiliki kadar kafein yang sangat rendah dan kandungan Ganoderma yang justru membantu menenangkan lambung.</p>
-            </div>
-            <div class="faq-item">
-                <h4 style="margin: 0 0 5px 0; color: #5c3a21;">Apakah produk ini halal dan resmi?</h4>
-                <p style="margin: 0; font-size: 14px; color: #555;">Tentu. Semua produk Shuang Hor bersertifikat Halal dan menggunakan teknologi paten dunia yang diakui global.</p>
-            </div>
-        </div>
-
-        <!-- 6. FOOTER -->
+        <!-- FOOTER -->
         <div class="footer">
             <p><strong>Disclaimer:</strong> Hasil yang dirasakan setiap individu dapat berbeda tergantung dari kondisi tubuh masing-masing.</p>
             <p style="margin-bottom: 0;">&copy; 2026 Independent Distributor Shuang Hor.<br>All Rights Reserved.</p>
         </div>
     </div>
 
-    <!-- 7. WA FLOATING -->
-    <a href="https://wa.me/628977526133?text=Halo%20Inda,%20saya%20mau%20konsultasi%20Produk%20Shuang%20Hor" class="float-wa" target="_blank">
+    <!-- WA FLOATING -->
+    <a href="https://wa.me/628977526133?text=Halo,%20saya%20mau%20konsultasi%20Produk%20Shuang%20Hor" class="float-wa" target="_blank">
         <svg viewBox="0 0 32 32" width="35" height="35" fill="white"><path d="M16 2a13 13 0 0 0-10.8 19.9l-2.1 6.3 6.6-2a13 13 0 1 0 6.3-24.2zm6 17.5c-.3 1-1.7 1.8-3 2-.4 0-1 .2-3-.5-2.3-.8-4.5-2.8-6-5-1.5-2.3-2-4.6-1.5-6 .3-.9 1-1.4 1.5-1.4.3 0 .6 0 .8.1.3 0 .7-.1 1 .6.4.9 1 2.5 1.1 2.8.1.3.1.6 0 .8-.1.2-.3.4-.5.6-.2.2-.4.5-.6.7-.2.2-.5.5-.2.9.3.5.7 1.1 1.2 1.6.6.5 1.3.9 1.8 1.1.4.2.7.2.9 0 .2-.2.5-.6.7-.8.2-.3.4-.2.7-.1 1.3.6 2.7 1.3 2.8 1.4.2.1.3.2.3.4z"/></svg>
     </a>
 
@@ -163,7 +148,7 @@
             // Ganti Nomor WA di Tombol
             if(waDownline) {
                 const btnUtama = document.querySelector('.cta-section .btn-wa');
-                if(btnUtama) btnUtama.href = "https://wa.me/" + waDownline + "?text=Halo,%20saya%20mau%20Pesan%20Produk%20Kopi/Greenzhi%20sebelum%20harga%20naik";
+                if(btnUtama) btnUtama.href = "https://wa.me/" + waDownline + "?text=Halo,%20saya%20mau%20Pesan%20Kopi/Greenzhi%20sebelum%20harga%20naik";
                 
                 const btnFloat = document.querySelector('.float-wa');
                 if(btnFloat) btnFloat.href = "https://wa.me/" + waDownline + "?text=Halo,%20saya%20mau%20konsultasi%20Produk%20Shuang%20Hor";
