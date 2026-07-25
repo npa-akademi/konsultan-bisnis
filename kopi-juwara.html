@@ -5,130 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- PENGATURAN TAMPILAN DI GRUP FB -->
-    <meta property="og:title" content="Kopi Sehat & Odol Alami | Solusi Keluarga">
-    <meta property="og:description" content="Nikmati Kopi 100% Arabika Brazil anti asam lambung dan Pasta Gigi Siwak paling alami.">
+    <meta property="og:title" content="Satu Pasta Gigi, Jutaan Peluang! | Greenzhi">
+    <meta property="og:description" content="Temukan rahasia kesehatan mulut total dan peluang keuangan mengejutkan dari rumah. Pendaftaran GRATIS!">
     <meta property="og:type" content="website">
 
-    <title>Produk Kesehatan Premium Shuang Hor</title>
+    <title>Keajaiban Greenzhi - Solusi Kesehatan & Bisnis</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: auto; padding: 0; background-color: #f9f9f9; }
-        .container { background: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1); overflow: hidden; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: auto; padding: 0; background-color: #f0fdf4; }
+        .container { background: #fff; box-shadow: 0 0 15px rgba(0,0,0,0.1); overflow: hidden; }
         
         /* BAR PRESENTER */
-        .presenter-bar { background-color: #d32f2f; color: #ffffff; text-align: center; padding: 10px; font-weight: bold; font-size: 14px; letter-spacing: 0.5px; }
+        .presenter-bar { background-color: #14532d; color: #ffffff; text-align: center; padding: 10px; font-weight: bold; font-size: 14px; letter-spacing: 0.5px; }
         
-        /* 1. HEADER (HOOK & HERO IMAGE UTAMA) */
-        .header { text-align: center; padding: 20px; border-bottom: 2px solid #eee; }
-        .header h1 { color: #2e7d32; font-size: 24px; margin-bottom: 10px; line-height: 1.3; }
-        .hero-img { width: 100%; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.15); margin: 20px 0; }
+        /* HEADER */
+        .header { text-align: center; padding: 25px 20px; background: linear-gradient(to bottom, #dcfce7, #ffffff); border-bottom: 2px solid #bbf7d0; }
+        .header h1 { color: #15803d; font-size: 26px; margin-bottom: 10px; line-height: 1.3; font-weight: 800; }
+        .header p.subtitle { font-size: 16px; color: #444; font-weight: 600; }
         
-        /* 2. BODY (PRODUK KOPI & ODOL) */
+        /* BODY SECTIONS */
         .body-section { padding: 20px; }
-        .produk-box { background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 20px; margin-bottom: 25px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
-        .produk-img { width: 100%; border-radius: 8px; margin-bottom: 15px; }
-        .produk-box h3 { color: #5c3a21; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        .produk-box h3.green { color: #2e7d32; }
         
-        ul.keunggulan { padding-left: 20px; font-size: 15px; margin-bottom: 0; }
-        ul.keunggulan li { margin-bottom: 10px; }
+        .product-box { background: #fff; border: 2px solid #22c55e; border-radius: 12px; padding: 20px; margin-bottom: 25px; box-shadow: 0 4px 8px rgba(34, 197, 94, 0.1); }
+        .product-box h3 { color: #166534; margin-top: 0; border-bottom: 2px dashed #bbf7d0; padding-bottom: 10px; text-align: center; }
         
-        /* BOX URGENCY */
-        .urgency-box { background-color: #ffebee; border: 2px dashed #f44336; padding: 15px; border-radius: 8px; margin: 20px 0; text-align: center; }
-        .urgency-box h4 { color: #d32f2f; margin: 0 0 5px 0; font-size: 18px; animation: blink 1.5s infinite; }
-        @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
+        .business-box { background: linear-gradient(135deg, #15803d, #14532d); color: white; border-radius: 12px; padding: 20px; margin-bottom: 20px; box-shadow: 0 8px 15px rgba(20, 83, 45, 0.3); }
+        .business-box h3 { color: #fef08a; margin-top: 0; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 10px; text-align: center; }
 
-        /* CTA (TOMBOL EKSEKUSI) */
-        .cta-section { text-align: center; padding: 20px 20px 30px; }
-        .btn-wa { display: inline-block; background: #25D366; color: white; padding: 15px 25px; text-decoration: none; font-weight: bold; border-radius: 50px; font-size: 18px; box-shadow: 0 4px 6px rgba(0,0,0,0.2); transition: 0.3s; }
+        ul.checklist { padding-left: 0; list-style: none; margin-bottom: 0; }
+        ul.checklist li { margin-bottom: 12px; padding-left: 30px; position: relative; font-size: 15px; }
+        ul.checklist li::before { content: '🌿'; position: absolute; left: 0; top: 0; font-size: 16px; }
+        
+        ul.check-white { padding-left: 0; list-style: none; margin-bottom: 0; }
+        ul.check-white li { margin-bottom: 12px; padding-left: 30px; position: relative; font-size: 14px; }
+        ul.check-white li::before { content: '✅'; position: absolute; left: 0; top: 0; font-size: 16px; }
+
+        /* CTA */
+        .cta-section { text-align: center; padding: 10px 20px 30px; }
+        .btn-wa { display: inline-block; background: #25D366; color: white; padding: 15px 25px; text-decoration: none; font-weight: bold; border-radius: 50px; font-size: 18px; box-shadow: 0 4px 6px rgba(0,0,0,0.2); transition: 0.3s; width: 80%; }
         .btn-wa:hover { background: #1ebe57; transform: translateY(-2px); }
         .btn-wa.pulse { animation: pulse 2s infinite; }
         @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
         
         /* FOOTER */
-        .footer { text-align: center; padding: 30px 20px; font-size: 12px; color: #ffffff; background-color: #6c757d; margin-top: 20px; }
+        .footer { text-align: center; padding: 30px 20px; font-size: 12px; color: #ffffff; background-color: #14532d; margin-top: 20px; }
 
         /* WA FLOATING */
         .float-wa { position: fixed; width: 60px; height: 60px; bottom: 20px; right: 20px; background-color: #25d366; color: #FFF; border-radius: 50px; text-align: center; box-shadow: 2px 2px 5px rgba(0,0,0,0.3); z-index: 1000; display: flex; align-items: center; justify-content: center; animation: bounce 2s infinite; }
-        @keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: translateY(0); } 40% { transform: translateY(-10px); } 60% { transform: translateY(-5px); } }
     </style>
 </head>
 <body>
 
-    <!-- BLOK MERAH PRESENTER (OTOMATIS BERUBAH) -->
+    <!-- BLOK PRESENTER -->
     <div class="presenter-bar">
-        📢 Direkomendasikan Oleh: <span id="nama-presenter">Inda</span>
+        📢 Konsultan Anda: <span id="nama-presenter">Inda</span>
     </div>
 
     <div class="container">
         <!-- HEADER UTAMA -->
         <div class="header">
-            <h1>Keluarga Cerdas Memilih yang Alami & Menyehatkan!</h1>
-            <p><strong>Beralihlah ke keajaiban Ganoderma ber-Paten Dunia. Perlindungan total dari secangkir kopi pagi hingga rutinitas sikat gigi keluarga Anda.</strong></p>
-            
-            <!-- GAMBAR 1: HERO HEADER -->
-            <img src="retouch_2026072420504677.jpg" alt="Solusi Kesehatan Keluarga" class="hero-img">
+            <h1>SATU PASTA GIGI,<br>JUTAAN PELUANG!</h1>
+            <p class="subtitle">Temukan rahasia kesehatan mulut total dan peluang keuangan yang mengejutkan, hanya dari Pasta Gigi Multifungsi Greenzhi.</p>
         </div>
 
-        <!-- EDUKASI PRODUK -->
+        <!-- INFO PRODUK (KECANGGIHAN GREENZHI) -->
         <div class="body-section">
-            <p>Halo, saya <strong>Inda</strong>. Kesehatan keluarga berawal dari apa yang kita konsumsi setiap hari. Kini Anda tidak perlu khawatir lagi, kami menghadirkan dua mahakarya premium dari <strong>Shuang Hor</strong>:</p>
-            
-            <!-- PRODUK 1: KOPI JUWARA -->
-            <div class="produk-box">
-                <h3>☕ KOPI SH JUWARA CAFE</h3>
-                <!-- GAMBAR 2: PRODUK KOPI -->
-                <img src="retouch_2026072420515632.jpg" alt="Kopi Juwara Cafe" class="produk-img">
-                <p>Banyak kopi beredar di pasaran, tapi apa bedanya Kopi Juwara? Inilah rahasia di setiap sachetnya:</p>
-                <ul class="keunggulan">
-                    <li><strong>Biji Kopi Premium Brazil:</strong> Menggunakan 100% Arabika Brazil. Dipanggang <em>fresh</em> dengan standar ISO Internasional tanpa perasa buatan.</li>
-                    <li><strong>Mengandung Ganoderma (Lingzhi):</strong> Memberikan dampak kebugaran optimal dan melindungi organ tubuh.</li>
-                    <li><strong>Creamer Minyak Kelapa (Netherland):</strong> Pelembut beraroma dari minyak nabati non-hidrogenasi. <strong>Bebas Lemak Trans Berbahaya!</strong></li>
-                    <li><strong>Gula Tebu Asli:</strong> Rasa manis natural dengan kalori yang terjaga. (Tersedia juga varian tanpa gula).</li>
+            <div class="product-box">
+                <h3>✨ Kecanggihan Greenzhi Multifungsi</h3>
+                <p style="text-align: center; font-size: 14px; margin-bottom: 20px;">Greenzhi bukan sekadar pasta gigi biasa. Ini adalah solusi perawatan oral total yang canggih dan alami.</p>
+                <ul class="checklist">
+                    <li>Diformulasikan dengan ekstrak <strong>Ganoderma langka</strong>, bersertifikat Paten Dunia untuk kesehatan total.</li>
+                    <li>Membersihkan tuntas, menjaga gusi tetap sehat, dan menyegarkan napas sepanjang hari.</li>
+                    <li>Lebih dari sekadar pasta gigi, ini adalah <strong>solusi multifungsi</strong> untuk masalah mulut spesifik.</li>
+                    <li>Berbasis bahan alami, terbukti berkualitas tinggi, dan bersertifikat <strong>Halal</strong>.</li>
+                    <li>Didukung oleh perusahaan multinasional yang sangat kuat dengan pengalaman <strong>39 tahun</strong>.</li>
                 </ul>
             </div>
 
-            <!-- PRODUK 2: GREENZHI -->
-            <div class="produk-box">
-                <h3 class="green">🌿 PASTA GIGI GREENZHI</h3>
-                <!-- GAMBAR 3: PRODUK ODOL -->
-                <img src="retouch_2026072420530876.jpg" alt="Pasta Gigi Greenzhi" class="produk-img">
-                <p>Diklaim sebagai <strong>Odol Paling Alami di Dunia!</strong> Berikan perlindungan terbaik untuk senyum keluarga Anda:</p>
-                <ul class="keunggulan">
-                    <li><strong>100% Tumbuhan Alami:</strong> Tanpa bahan kimia berbahaya, sehingga aman untuk keseimbangan hormon tubuh.</li>
-                    <li><strong>Kandungan Ekstrak Siwak:</strong> Mengikuti Sunnah untuk kebersihan mulut yang maksimal dan napas segar.</li>
-                    <li><strong>Paten Dunia & Teruji:</strong> Mencegah plak, kerusakan gigi, penyakit gusi, dan melancarkan sirkulasi darah jaringan gusi.</li>
-                    <li><strong>Bersertifikat Resmi:</strong> Sudah berstempel BPOM dan Halal. Pastikan Greenzhi ada di kamar mandi Anda!</li>
+            <!-- INFO BISNIS (PELUANG JUTAAN DARI RUMAH) -->
+            <div class="business-box">
+                <h3>💰 Peluang Usaha Jutaan Dari Rumah</h3>
+                <p style="text-align: center; font-size: 14px; color: #dcfce7; margin-bottom: 20px;">Sangat ringkas dan mengena sasaran. Pelajari bagaimana Anda bisa meraih hasil jutaan per bulan hanya bermodal HP!</p>
+                <ul class="check-white">
+                    <li><strong>Kerja Fleksibel:</strong> Jalankan bisnis ini dari rumah sambil mengurus keluarga, cukup via HP.</li>
+                    <li><strong>Anti Ganggu Kerja:</strong> Tambah pemasukan secara signifikan tanpa harus mengganggu pekerjaan utama Anda.</li>
+                    <li><strong>Tanpa Target & Stok:</strong> Anda adalah bos bagi diri Anda sendiri! Tidak ada target tutup poin dan tidak perlu stok barang (pusat yang urus pengiriman).</li>
+                    <li><strong>Support VIP:</strong> Ada support system lengkap (Web Replika, Zoom, YouTube, Grup WA/Telegram) dan panduan yang simpel.</li>
+                    <li><strong>Modal & Risiko Rendah:</strong> Modal sangat ringan, harga terjangkau. Pendaftaran <strong>GRATIS</strong> tanpa syarat rumit!</li>
+                    <li><strong>Warisan Masa Depan:</strong> Bangun <i>passive income</i> untuk pensiun berkualitas dan masa depan keluarga (Bisnis Kuat & Bisa Diwariskan).</li>
                 </ul>
             </div>
         </div>
 
-        <!-- INFO KENAIKAN HARGA (URGENCY) -->
-        <div style="padding: 0 20px;">
-            <div class="urgency-box">
-                <h4>🚨 PENGUMUMAN PENTING!</h4>
-                <p style="margin-bottom: 0; font-size: 14px; color: #b71c1c;">Akan ada <strong>Penyesuaian Harga Produk secara Nasional per 1 Agustus 2026</strong>. Amankan stok Kopi dan Greenzhi Anda HARI INI juga dengan harga terbaik sebelum naik!</p>
-            </div>
-        </div>
-
-        <!-- CTA -->
+        <!-- CALL TO ACTION -->
         <div class="cta-section">
-            <h3 style="margin-top:0; color:#d32f2f;">Pesan Sekarang Untuk Keluarga Tercinta!</h3>
-            <p>Jangan tunggu sampai keluhan datang. Klik tombol di bawah ini untuk pemesanan atau konsultasi produk!</p>
+            <h3 style="margin-top:0; color:#15803d;">Satu Langkah Menuju Impian Anda!</h3>
+            <p>Jadilah bagian dari perubahan besar dalam hidup Anda. Hubungi kami sekarang untuk info pendaftaran segera.</p>
             
-            <a href="https://wa.me/628977526133?text=Halo,%20saya%20mau%20Pesan%20Kopi/Greenzhi%20sebelum%20harga%20naik" class="btn-wa pulse">
-                👉 PESAN PRODUK SEKARANG
+            <a href="https://wa.me/628977526133?text=Halo%20Inda,%20saya%20tertarik%20info%20Join%20Gratis%20Bisnis%20Greenzhi" class="btn-wa pulse">
+                👉 JOIN GRATIS SEKARANG!
             </a>
         </div>
 
         <!-- FOOTER -->
         <div class="footer">
-            <p><strong>Disclaimer:</strong> Hasil yang dirasakan setiap individu dapat berbeda tergantung dari kondisi tubuh masing-masing.</p>
-            <p style="margin-bottom: 0;">&copy; 2026 Independent Distributor Shuang Hor.<br>All Rights Reserved.</p>
+            <p><strong>Disclaimer:</strong> Hasil pendapatan dapat bervariasi bergantung pada dedikasi dan konsistensi masing-masing individu.</p>
+            <p style="margin-bottom: 0;">&copy; 2026 Bisnis Greenzhi Independent.<br>All Rights Reserved.</p>
         </div>
     </div>
 
     <!-- WA FLOATING -->
-    <a href="https://wa.me/628977526133?text=Halo,%20saya%20mau%20konsultasi%20Produk%20Shuang%20Hor" class="float-wa" target="_blank">
+    <a href="https://wa.me/628977526133?text=Halo%20Inda,%20saya%20mau%20konsultasi%20tentang%20produk%20Greenzhi" class="float-wa" target="_blank">
         <svg viewBox="0 0 32 32" width="35" height="35" fill="white"><path d="M16 2a13 13 0 0 0-10.8 19.9l-2.1 6.3 6.6-2a13 13 0 1 0 6.3-24.2zm6 17.5c-.3 1-1.7 1.8-3 2-.4 0-1 .2-3-.5-2.3-.8-4.5-2.8-6-5-1.5-2.3-2-4.6-1.5-6 .3-.9 1-1.4 1.5-1.4.3 0 .6 0 .8.1.3 0 .7-.1 1 .6.4.9 1 2.5 1.1 2.8.1.3.1.6 0 .8-.1.2-.3.4-.5.6-.2.2-.4.5-.6.7-.2.2-.5.5-.2.9.3.5.7 1.1 1.2 1.6.6.5 1.3.9 1.8 1.1.4.2.7.2.9 0 .2-.2.5-.6.7-.8.2-.3.4-.2.7-.1 1.3.6 2.7 1.3 2.8 1.4.2.1.3.2.3.4z"/></svg>
     </a>
 
@@ -139,19 +125,19 @@
             const waDownline = urlParams.get('wa');
             const namaDownline = urlParams.get('nama');
             
-            // Ganti Nama Presenter di Blok Merah
+            // Ganti Nama Presenter
             if(namaDownline) {
                 const spanNama = document.getElementById('nama-presenter');
                 if(spanNama) spanNama.textContent = namaDownline.replace(/-/g, ' '); 
             }
             
-            // Ganti Nomor WA di Tombol
+            // Ganti Nomor WA
             if(waDownline) {
                 const btnUtama = document.querySelector('.cta-section .btn-wa');
-                if(btnUtama) btnUtama.href = "https://wa.me/" + waDownline + "?text=Halo,%20saya%20mau%20Pesan%20Kopi/Greenzhi%20sebelum%20harga%20naik";
+                if(btnUtama) btnUtama.href = "https://wa.me/" + waDownline + "?text=Halo,%20saya%20tertarik%20info%20Join%20Gratis%20Bisnis%20Greenzhi";
                 
                 const btnFloat = document.querySelector('.float-wa');
-                if(btnFloat) btnFloat.href = "https://wa.me/" + waDownline + "?text=Halo,%20saya%20mau%20konsultasi%20Produk%20Shuang%20Hor";
+                if(btnFloat) btnFloat.href = "https://wa.me/" + waDownline + "?text=Halo,%20saya%20mau%20konsultasi%20tentang%20produk%20Greenzhi";
             }
         });
     </script>
