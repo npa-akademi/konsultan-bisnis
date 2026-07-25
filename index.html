@@ -17,24 +17,26 @@
         /* BAR PRESENTER */
         .presenter-bar { background-color: #d32f2f; color: #ffffff; text-align: center; padding: 10px; font-weight: bold; font-size: 14px; letter-spacing: 0.5px; }
         
-        /* 1. HEADER (HOOK + HERO IMAGE) */
+        /* 1. HEADER */
         .header { text-align: center; padding: 20px; border-bottom: 2px solid #eee; }
         .header h1 { color: #d32f2f; font-size: 24px; margin-bottom: 10px; line-height: 1.3; }
         
-        /* 2. BODY (STORY/EDUKASI) */
+        /* 2. BODY */
         .body-section { padding: 20px; }
         .poin-plus { background: #e8f5e9; padding: 15px; border-radius: 8px; border-left: 5px solid #4caf50; margin: 15px 0; }
         .poin-kopi { background: #fff3cd; padding: 15px; border-radius: 8px; border-left: 5px solid #ffc107; margin: 15px 0; }
         
-        /* 3. TESTIMONI */
-        .testimoni { background: #fdfaf6; padding: 15px; border-radius: 8px; margin: 20px 0; border-left: 5px solid #5c3a21; font-style: italic; }
+        /* 3. VIDEO RESPONSIVE (YOUTUBE) */
+        .video-section { background: #fff; padding: 20px; margin: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); border-top: 4px solid #d32f2f; }
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; margin-top: 15px; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
         
-        /* BOX URGENCY (KENAIKAN HARGA) */
-        .urgency-box { background-color: #ffebee; border: 2px dashed #f44336; padding: 15px; border-radius: 8px; margin: 20px 0; text-align: center; }
+        /* BOX URGENCY */
+        .urgency-box { background-color: #ffebee; border: 2px dashed #f44336; padding: 15px; border-radius: 8px; margin: 20px; text-align: center; }
         .urgency-box h4 { color: #d32f2f; margin: 0 0 5px 0; font-size: 18px; animation: blink 1.5s infinite; }
         @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
 
-        /* 4. CTA (TOMBOL EKSEKUSI) */
+        /* 4. CTA */
         .cta-section { text-align: center; padding: 20px 20px 30px; }
         .btn-wa { display: inline-block; background: #25D366; color: white; padding: 15px 25px; text-decoration: none; font-weight: bold; border-radius: 50px; font-size: 18px; box-shadow: 0 4px 6px rgba(0,0,0,0.2); transition: 0.3s; }
         .btn-wa:hover { background: #1ebe57; transform: translateY(-2px); }
@@ -55,24 +57,23 @@
 </head>
 <body>
 
-    <!-- BLOK MERAH PRESENTER (OTOMATIS BERUBAH) -->
+    <!-- BLOK MERAH PRESENTER -->
     <div class="presenter-bar">
         📢 Dipresentasikan Oleh: <span id="nama-presenter">Inda</span>
     </div>
 
     <div class="container">
-        <!-- 1. HEADER (HOOK & HERO BANNER) -->
+        <!-- 1. HEADER -->
         <div class="header">
             <h1>Bukan Bisnis MLM Biasa. Siap Menjadi Pesaing Starbucks?</h1>
             <p><strong>Banyak bisnis menawarkan bonus jor-joran, tapi rungkad dalam 1-5 tahun. Saatnya bangun pondasi yang kuat!</strong></p>
             
-            <!-- BANNER HERO -->
             <div style="text-align: center; margin: 20px 0;">
                 <img src="banner-kopi.jpg" alt="Varian Kopi Juwara Cafe" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.15); border: 1px solid #ddd;">
             </div>
         </div>
 
-        <!-- 2. BODY (STORY / EDUKASI) -->
+        <!-- 2. BODY (EDUKASI) -->
         <div class="body-section">
             <p>Halo, saya <strong>Inda</strong>. Jika Anda lelah berpindah bisnis karena sistem yang tidak stabil, Anda harus membaca ini sampai habis.</p>
             <p>Bisnis yang kokoh harus didukung oleh produk luar biasa. Kami memilih kendaraan bisnis <strong>Kopi Juwara & Greenzhi (Shuang Hor)</strong> karena potensinya yang tidak masuk akal:</p>
@@ -83,35 +84,26 @@
                 <p>✅ <strong>Fasilitas Mewah GRATIS:</strong> Di tahun 2026-2027 akan segera dibuka 3 <em>Coffee Lounge</em> di Indonesia. Anda bisa memanfaatkannya secara GRATIS sebagai member!</p>
                 <p>✅ <strong>Anti-Rungkad:</strong> Membangun passive income dari rumah tanpa target dan tanpa stok barang.</p>
             </div>
+        </div>
 
-            <div class="poin-kopi">
-                <h4 style="margin-top:0; color:#5c3a21;">☕ 5 MANFAAT KOPI JUWARA</h4>
-                <p>Kombinasi Kopi Arabika premium & Ganoderma memberikan khasiat luar biasa:</p>
-                <ul style="padding-left: 20px; font-size: 14px;">
-                    <li><strong>Aman di Lambung:</strong> Kafein rendah, ramah asam lambung.</li>
-                    <li><strong>Perlindungan Liver:</strong> Menurunkan enzim hati (GOT & GPT).</li>
-                    <li><strong>Regulasi Sistem Imun:</strong> Menyeimbangkan daya tahan tubuh.</li>
-                    <li><strong>Anti-Inflamasi:</strong> Meredakan peradangan & buang racun.</li>
-                    <li><strong>Fokus Tajam:</strong> Konsentrasi siang hari, tidur pulas malam hari.</li>
-                </ul>
+        <!-- 3. SOSIAL PROOF: VIDEO YOUTUBE -->
+        <div class="video-section">
+            <h3 style="text-align: center; color: #d32f2f; margin-top: 0;">Bukti Nyata: Dari Minus Menuju Diamond 💎</h3>
+            <p style="text-align: center; font-size: 14px; margin-bottom: 0;">Kisah Inspiratif DM Alva Jovita merubah hidupnya bersama sistem ini. Tonton video eksklusifnya di bawah ini!</p>
+            
+            <div class="video-container">
+                <!-- GANTI LINK YOUTUBE DI BAGIAN SRC="" DI BAWAH INI -->
+                <iframe src="https://www.youtube.com/embed/U3l08Yw3R7Q" title="Dari Minus Menuju Diamond" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
-        <!-- 3. SOCIAL PROOF (TESTIMONI) -->
-        <div class="testimoni">
-            <p>"Awalnya saya ragu karena sering kecewa dengan sistem lama. Tapi setelah tahu Shuang Hor sudah ada di 7 negara dan produknya paten dunia, saya yakin ini kendaraan yang tepat untuk jangka panjang!"</p>
-            <p style="text-align: right; margin:0; font-weight: bold;">- Mitra Shuang Hor</p>
+        <!-- INFO KENAIKAN HARGA (URGENCY) -->
+        <div class="urgency-box">
+            <h4>🚨 PENGUMUMAN PENTING!</h4>
+            <p style="margin-bottom: 0; font-size: 14px; color: #b71c1c;">Akan ada <strong>Penyesuaian Harga Produk secara Nasional per 1 Agustus 2026</strong>. Amankan posisi dan harga terbaik Anda dengan bergabung HARI INI juga sebelum perubahan harga berlaku!</p>
         </div>
 
-        <!-- INFO KENAIKAN HARGA (URGENCY) DARI BU INDA -->
-        <div style="padding: 0 20px;">
-            <div class="urgency-box">
-                <h4>🚨 PENGUMUMAN PENTING!</h4>
-                <p style="margin-bottom: 0; font-size: 14px; color: #b71c1c;">Akan ada <strong>Penyesuaian Harga Produk secara Nasional per 1 Agustus 2026</strong>. Amankan posisi dan harga terbaik Anda dengan bergabung HARI INI juga sebelum perubahan harga berlaku!</p>
-            </div>
-        </div>
-
-        <!-- 4. OFFER & CTA -->
+        <!-- 4. CTA -->
         <div class="cta-section">
             <h3 style="margin-top:0; color:#d32f2f;">Satu Langkah Menuju Impian Anda!</h3>
             <p>Peluang menjadi bagian dari perubahan besar ini ada di depan mata. Hubungi sekarang sebelum keduluan yang lain!</p>
@@ -121,7 +113,7 @@
             </a>
         </div>
 
-        <!-- 5. FAQ (TANYA JAWAB) -->
+        <!-- 5. FAQ -->
         <div class="faq">
             <h3 style="text-align:center;">Tanya Jawab (FAQ)</h3>
             <div class="faq-item">
